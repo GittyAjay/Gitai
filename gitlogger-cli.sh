@@ -24,7 +24,7 @@ YELLOW='\033[1;33m'
 PURPLE='\033[0;35m'
 NC='\033[0m' # No Color
 
-# Gemini API Configuration
+# Gemini API Configurationfrfjrej
 GEMINI_API_KEY="AIzaSyB_4QxUxJeAAVPaUxlDVgR0uQusrgnNeyU"
 GEMINI_API_ENDPOINT="https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-8b:generateContent"
 GEMINI_MODEL="gemini-1.5-flash-8b" 
