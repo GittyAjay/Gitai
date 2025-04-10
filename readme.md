@@ -7,7 +7,7 @@ A powerful Git log analysis and reporting tool with AI-powered insights.
 With sudo access:
 
 ```bash
-curl -o- https://raw.githubusercontent.com/YOUR_USERNAME/YOUR_REPO/main/gitlogger-cli.sh | sudo bash -s -- install
+curl -o- https://raw.githubusercontent.com/GittyAjay/Gitai/dev/gitlogger-cli.sh | sudo bash -s -- install
 ```
 
 Without sudo access:
