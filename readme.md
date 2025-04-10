@@ -13,7 +13,7 @@ curl -o- https://raw.githubusercontent.com/YOUR_USERNAME/YOUR_REPO/main/gitlogge
 Without sudo access:
 
 ```bash
-curl -o- https://raw.githubusercontent.com/YOUR_USERNAME/YOUR_REPO/main/gitlogger-cli.sh | bash -s -- install
+curl -o- https://raw.githubusercontent.com/GittyAjay/Gitai/dev/gitlogger-cli.sh | bash -s -- install
 ```
 
 After installation, restart your terminal or run:
