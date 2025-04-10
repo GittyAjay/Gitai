@@ -30,6 +30,35 @@ GEMINI_API_ENDPOINT="https://generativelanguage.googleapis.com/v1beta/models/gem
 GEMINI_MODEL="gemini-1.5-flash-8b" 
 GEMINI_ESTIMATE_ACCURACY="±15%"
 
+# Function to install GitLogger CLI
+install_gitlogger() {
+  local install_dir="/usr/local/bin"
+  local script_url="https://raw.githubusercontent.com/GittyAjay/Gitai/dev/gitlogger-cli.sh"
+  local install_path="$install_dir/gitlogger"
+  
+  # Check if we have write permissions to the install directory
+  if [ ! -w "$install_dir" ]; then
+    print_error "You don't have write permissions to $install_dir"
+    print_info "Try running with sudo: sudo bash $0 install"
+    return 1
+  fi
+  
+  print_info "Downloading GitLogger CLI..."
+  
+  # Download the script
+  if ! curl -sSL "$script_url" -o "$install_path"; then
+    print_error "Failed to download GitLogger CLI"
+    return 1
+  fi
+  
+  # Make the script executable
+  chmod +x "$install_path"
+  
+  print_success "GitLogger CLI installed successfully to $install_path"
+  print_info "You can now use it by typing 'gitlogger' in your terminal"
+  
+  return 0
+}
 # Helper functions
 print_header() {
   echo -e "${BLUE}=====================================${NC}"
